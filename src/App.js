@@ -9,9 +9,7 @@ function App() {
   }
 
   function register() {
-    fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${entrada}&lang=pt_br&units=metric&appid=777fd6c175f16899b669ab9b22be7638`
-    )
+    fetch(`http://localhost:8080/cao`)
       .then((response) => {
         return response.json();
       })
